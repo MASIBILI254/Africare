@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+button { cursor: pointer; }
+.nav-link { position: relative; font-size: .875rem; font-weight: 600; color: #475569; transition: color .2s ease; }
+.nav-link:hover { color: #075B3A; }
+.nav-link::after { content: ''; position: absolute; left: 0; right: 0; bottom: -9px; height: 2px; border-radius: 99px; background: #F7941D; transform: scaleX(0); transform-origin: center; transition: transform .2s ease; }
+.nav-link:hover::after { transform: scaleX(1); }
+.hero-photo { position: relative; }
+::selection { background: #9BD34F; color: #043D28; }
